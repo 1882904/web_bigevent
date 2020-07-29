@@ -55,6 +55,7 @@ $('#form_login').submit(function(e) {
     method: 'POST',
     // 快速获取表单中的数据
     data: $(this).serialize(),
+    // new form
     success: function(res) {
       if (res.status !== 0) {
         return layer.msg('登录失败！')
